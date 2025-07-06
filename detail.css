@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #EAEAEA;
+    --header-bg-color: #101010;
+    --wrap-color: #fff;
+    --hover-text-color: #FFA542;
+    --hover-heart-color: rgb(197, 38, 38);
+    --hover-cart-color: rgb(47, 94, 139);
+    --text-color: #000000;
+    --icon-color: #838383;
+    --main-font: "Montserrat", sans-serif;
+    
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--main-bg-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 500px;
+}
+
+.nav-model img {
+    display: flex;
+    padding: 10px;
+}
+
+
+.nav-model input {
+    justify-content: center;
+    text-align: center;
+    width: 212px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+}
+
+.nav-like {
+    margin-left: 100px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    color: var(--icon-color);
+}
+
+.nav-cart {
+    margin-right: 10px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.nav-like:hover {
+    transform: scale(1.05);
+}
+
+.nav-cart:hover {
+    transform: scale(1.05); 
+}
+
+
+.header-bottom {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: var(--header-bg-color);
+    border-radius: 30px;
+}
+
+.ad-banner img {
+    width: 321px;
+    height: 200px;
+    margin-right: 165px;
+    object-fit: cover;
+}
+
+.title-banner {
+    font-family: var(--main-font);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.ad-banner {
+    display: flex;
+    align-items: center;
+}
+
+
+.main-wrapper {
+    padding: 20px;
+    background-color: var(--wrap-color);
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.title-product {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+}
+
+.title-product h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 100%;
+    font-weight: 600;
+    color: var(--icon-color);
+}
+
+.main-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.product-logo {
+    display: flex;
+    justify-content: end;
+}
+
+.bottom-name {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0px 10px 40px;
+}
+
+.bottom-name h2 {
+    font-size: 25px;
+    align-items: center;
+    font-family: var(--main-font);
+    color: #1C1C27;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+
+.price-text {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    margin-left: 750px;
+}
+
+.price-text h3 {
+    font-family: var(--main-font);
+    font-size: 28px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #DF6464;
+}
+
+.price-text .line {
+    font-family: var(--main-font);
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 600;
+    color: #AAAAAA;
+    text-decoration: line-through coral;
+}
+
+.add-info {
+    font-family: var(--main-font);
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-top: 40px;
+    width: 500px;
+    height: auto;
+    width: 100%;
+}
+
+
+.info-head h3 {
+    font-family: var(--main-font);
+    text-align: start;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.lists {
+    width: 100%;
+    border-radius: 20px;
+    font-family: var(--main-font);
+}
+
+.lists ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 30px auto;
+}
+
+.lists li {
+    padding: 8px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+
+.wrap-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.button-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.button-part button {
+    width: 250px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+
+.button-part button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 10px white;
+    
+}
+
+.cart-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.site-footer {
+    display: flex;
+    padding: 20px;
+    margin-top: 19px;
+    border-radius: 30px 30px 0 0;
+    background-color: var(--wrap-color);
+}
+
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    font-family: var(--main-font);
+}
+  
+.footer-column {
+    display: flex;
+    gap: 5px;
+}
+  
+.logo img {
+    width: 100px;
+    margin-left: 20px;
+}
+  
+.nav-links ul {
+    list-style: none;
+}
+  
+.nav-links li {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+  
+.service {
+    display: flex;
+    flex-direction: column;
+}
+  
+.service .service {
+    font-size: 16px;
+    color: #000;
+}
+  
+.language {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+
+}
+
+.language span {
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.language span:hover {
+    transform: scale(1.05);
+    color: var(--hover-text-color);
+}
+  
+.language img {
+    width: 20px;
+    height: 20px;
+}
+   
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+  
+.social-icons img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
